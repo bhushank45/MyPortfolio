@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    background: #0F172A;
+    color: #ffffff;
+}
+.navbar{
+    display: flex;
+    background: #111827;
+
+}
+.nav{
+    display: flex;
+    gap: 12px;
+}
+.nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav li{
+    list-style: none;
+}
+/* logo */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+.logo img{
+    width: 120px;
+    height: auto;
+}
+.logo span{
+    color: blue;
+}
+
