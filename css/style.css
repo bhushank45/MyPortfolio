@@ -5,21 +5,42 @@
 }
 body{
     font-family: "Outfit", sans-serif;
-    background: #0F172A;
+    background: #050B16;
     color: #ffffff;
+}
+/* navbar */
+header{
+    width:100%;
+    padding:20px 60px;
 }
 .navbar{
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom:1px solid #131314;
     background: #111827;
 
 }
 .nav{
     display: flex;
-    gap: 12px;
+    gap: 45px;
+    align-items: center;
 }
 .nav a{
     text-decoration: none;
     color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: #2D7DFF;
+}
+nav a.active{
+    color:#2D7DFF;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 2px solid #2D7DFF;
 }
 .nav li{
     list-style: none;
