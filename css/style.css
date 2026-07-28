@@ -8,18 +8,24 @@ body{
     background: #050B16;
     color: #ffffff;
 }
-/* navbar */
+/*=== navbar ===*/
 header{
     width:100%;
-    padding:20px 60px;
+    padding:20px 30px;
+}
+.container{
+    max-width:1500px;
+    margin:auto;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    border-bottom:1px solid #131314;
-    background: #111827;
-
+    border:1px solid rgba(255,255,255,.05);
+    border-radius: 16px;
+    background: #091220;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
 }
 .nav{
     display: flex;
@@ -27,19 +33,21 @@ header{
     align-items: center;
 }
 .nav a{
+    display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     transition: 0.3s;
 }
-nav a:hover{
+.nav a:hover{
     color: #2D7DFF;
+    transform:translateY(-1px);
 }
-nav a.active{
+.nav a.active{
     color:#2D7DFF;
     font-weight: bold;
-    padding: 5px;
+    padding-bottom:3px;
     border-bottom: 2px solid #2D7DFF;
 }
 .nav li{
@@ -49,15 +57,32 @@ nav a.active{
 .logo{
     display: flex;
     align-items: center;
-    gap: 12px;
     text-decoration: none;
     color: #fff;
 }
 .logo img{
     width: 120px;
     height: auto;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 2px solid rgba(255,255,255,0.15);
+
 }
 .logo span{
-    color: blue;
+    color: #2D7DFF;
+    font-weight: bold;
 }
-
+/* Resume button */
+.resume-btn{
+    text-decoration: none;
+    border: 1px solid #2D7DFF;
+    border-radius: 10px;
+    padding: 12px 25px;
+    color: #2D7DFF;
+    transition: 0.3s;
+}
+.resume-btn:hover{
+    background:#2D7DFF;
+    color:#fff;
+    transform:translateY(-1px);
+}
